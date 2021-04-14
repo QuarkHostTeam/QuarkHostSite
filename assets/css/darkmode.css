@@ -106,7 +106,7 @@ a:hover {
 }
 
 .btn-outline-primary {
-  color: #e3eeff;
+  /*color: #e3eeff;*/
   border-color: rgb(255,255,255);
   background: linear-gradient(-116deg, rgb(234,144,94), rgb(114,218,187) 99%);
   -webkit-background-clip: text;
@@ -115,7 +115,14 @@ a:hover {
 
 .btn-outline-primary:hover {
   /*color: #fff;*/
-  /*background: rgba(198,166,222,0.51);*/
-  border-color: rgba(0,0,0,0);
+  background: linear-gradient(116deg, rgb(94,234,150), rgb(218,114,208) 99%);
+  border-color: rgb(154,154,154);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
 }
 
