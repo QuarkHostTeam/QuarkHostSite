@@ -591,6 +591,7 @@ section#pricing article .pricing-card-container .pricing-card .footer p.footer-n
   section#pricing article .pricing-card-container .pricing-card:nth-child(2) {
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-top: 5rem;
   }
 }
 
