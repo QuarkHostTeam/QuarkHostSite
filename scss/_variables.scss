@@ -1,0 +1,30 @@
+// Colors
+
+$main-color: #9b8aff;
+$main-color-dark: #664aff;
+$main-color-hover: rgba($main-color, 0.8);
+$secondary-color: #eee;
+
+$main-bg-color: #24292b;
+$secondary-bg-color: #2b2f31;
+$navbar-bg: #181818;
+$card-bg: #1d2122;
+$overlay: rgba(#000, 0.4);
+$overlay-dark: rgba(#000, 0.6);
+
+// Font Weights
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+// Font Sizes
+
+$h1-default-size: 5rem;
+$h2-default-size: 2.5rem;
+$h3-default-size: 1.8rem;
+$p-default-size: 1.2rem;
+$a-default-size: 1.2rem;

@@ -1,0 +1,10 @@
+@import "./variables", "./resets", "./function";
+
+.button {
+    padding: 0.6rem 0.8rem;
+    transition: background 200ms linear, color 200ms linear;
+
+    &:focus {
+        outline: none;
+    }
+}
