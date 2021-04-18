@@ -1,0 +1,603 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.8);
+  -webkit-transition: 100ms color ease-out;
+  transition: 100ms color ease-out;
+}
+
+nav {
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #181818;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .logo img {
+  width: 3rem;
+}
+
+nav .logo a.name {
+  margin-left: 0.7rem;
+  font-size: 1.4rem;
+}
+
+nav .hamburger-container {
+  cursor: pointer;
+  position: absolute;
+  top: 1.7rem;
+  right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 2.5rem;
+  height: 27px;
+}
+
+nav .hamburger-container .hamburger {
+  height: 3px;
+  width: 100%;
+  background: rgba(238, 238, 238, 0.8);
+}
+
+nav .hamburger-container:hover .hamburger {
+  background: #eee;
+}
+
+nav .hamburger-container.clicked {
+  top: 1.7rem;
+  right: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .hamburger-container.clicked .hamburger:nth-child(2) {
+  display: none;
+}
+
+nav .hamburger-container.clicked .hamburger:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(2px);
+          transform: rotate(45deg) translateY(2px);
+}
+
+nav .hamburger-container.clicked .hamburger:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-2px);
+          transform: rotate(-45deg) translateY(-2px);
+}
+
+nav .nav-links {
+  display: none;
+  width: 100%;
+}
+
+nav .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+nav .nav-links ul li {
+  display: block;
+  text-align: center;
+}
+
+nav .nav-links ul li:nth-child(2), nav .nav-links ul li:nth-child(3) {
+  margin-top: 0.5rem;
+}
+
+nav .nav-links ul li:nth-child(4) {
+  margin: 0.5rem 0;
+}
+
+nav .nav-links ul li a:hover {
+  color: #9b8aff;
+}
+
+nav .nav-links.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-links {
+    display: inline-block;
+    width: 531.172px;
+  }
+  nav .nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+  }
+  nav .nav-links ul li {
+    display: inline-block;
+    right: 0;
+  }
+  nav .nav-links ul li:nth-child(2), nav .nav-links ul li:nth-child(3) {
+    margin-left: 1.3rem;
+  }
+  nav .nav-links ul li:nth-child(4) {
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
+  nav .nav-links ul li a:hover {
+    color: #9b8aff;
+  }
+  nav .hamburger-container {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .name {
+    display: none;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 2.5rem 0 1rem 0;
+  background: #2b2f31;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .link-container .container {
+  margin-bottom: 2rem;
+}
+
+footer .link-container .container h3.container-head {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+footer .link-container .container ul {
+  list-style: none;
+}
+
+footer .link-container .container ul li {
+  padding: 0;
+  margin: 0.5rem auto;
+}
+
+footer .link-container .container ul li i {
+  color: #9b8aff;
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  display: none;
+  -webkit-transition: 100ms color linear;
+  transition: 100ms color linear;
+}
+
+footer .link-container .container ul li:hover i {
+  color: #664aff;
+}
+
+footer .link-container .container ul li a {
+  font-size: 1rem;
+  color: rgba(238, 238, 238, 0.8);
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
+}
+
+footer .link-container .container ul li a:hover {
+  color: #eee;
+}
+
+footer p.copyright,
+footer p.copyright .year {
+  color: rgba(238, 238, 238, 0.7);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  footer .link-container {
+    width: 85%;
+    max-width: 95%;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: left;
+  }
+  footer .link-container .container {
+    display: block;
+  }
+  footer .link-container .container ul li i {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer .link-container .container h3.container-head {
+    font-size: 1.8rem;
+  }
+  footer .link-container .container ul li a {
+    font-size: 1.2rem;
+  }
+  footer p.copyright,
+  footer p.copyright .year {
+    font-size: 1.2rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 0.6rem 0.8rem;
+  -webkit-transition: background 200ms linear, color 200ms linear;
+  transition: background 200ms linear, color 200ms linear;
+}
+
+.button:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 0.6rem 0.8rem;
+  -webkit-transition: background 200ms linear, color 200ms linear;
+  transition: background 200ms linear, color 200ms linear;
+}
+
+.button:focus {
+  outline: none;
+}
+
+* {
+  color: #eee;
+  font-family: "Aldrich", sans-serif;
+}
+
+:root {
+  scroll-padding-top: 85px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #24292b;
+  margin-top: 85px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+section h2 {
+  color: #9b8aff;
+}
+
+section p.section-description {
+  color: rgba(238, 238, 238, 0.7);
+}
+
+article {
+  margin-top: 3.5rem;
+}
+
+nav > .nav-links > ul > li:nth-child(3) > a {
+  color: #9b8aff;
+}
+
+section#pricing {
+  padding: 0.5rem 0 4rem 0;
+}
+
+section#pricing h2 {
+  font-size: 2rem;
+}
+
+section#pricing h2.plan-name {
+  color: rgba(155, 138, 255, 0.9);
+}
+
+section#pricing p {
+  font-size: 1rem;
+}
+
+section#pricing p.section-description, section#pricing p.plan-description, section#pricing p.card-description {
+  max-width: 35rem;
+  line-height: 1.5rem;
+  margin: 1rem auto 0;
+  color: rgba(238, 238, 238, 0.7);
+}
+
+section#pricing hr.section-divide {
+  margin: 6rem auto 4.5rem;
+  width: 80%;
+  max-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#pricing article.extreme .pricing-card-container .pricing-card:nth-child(3) {
+  padding: 2rem 1rem;
+}
+
+section#pricing article .pricing-card-container {
+  margin: auto;
+}
+
+section#pricing article .pricing-card-container .pricing-card {
+  background: #1d2122;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.55rem 1rem;
+  max-width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0.3rem 0.3rem;
+  border-top: 2px solid #9b8aff;
+}
+
+section#pricing article .pricing-card-container .pricing-card .head h3.card-head {
+  font-weight: 700;
+}
+
+section#pricing article .pricing-card-container .pricing-card .head p.card-description {
+  color: rgba(238, 238, 238, 0.7);
+}
+
+section#pricing article .pricing-card-container .pricing-card hr.card-divide {
+  width: 80%;
+  margin: 2rem auto 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#pricing article .pricing-card-container .pricing-card .body .specs p,
+section#pricing article .pricing-card-container .pricing-card .body .specs span {
+  font-size: 1.2rem;
+}
+
+section#pricing article .pricing-card-container .pricing-card .body .specs p {
+  margin: 1.2rem auto;
+}
+
+section#pricing article .pricing-card-container .pricing-card .body .specs p:nth-child(1) {
+  display: inline-block;
+  border-bottom: 2px solid rgba(238, 238, 238, 0.7);
+  margin-top: 2rem;
+}
+
+section#pricing article .pricing-card-container .pricing-card .body .specs p span {
+  font-weight: 700;
+}
+
+section#pricing article .pricing-card-container .pricing-card .footer h2.price {
+  color: #9b8aff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+section#pricing article .pricing-card-container .pricing-card .footer .button {
+  border: 1px solid #eee;
+  color: #eee;
+  margin-bottom: 1.6rem;
+}
+
+section#pricing article .pricing-card-container .pricing-card .footer .button:hover {
+  background: #eee;
+  color: #1d2122;
+}
+
+section#pricing article .pricing-card-container .pricing-card .footer p {
+  margin-top: 2rem;
+  font-size: 0.6rem;
+}
+
+section#pricing article .pricing-card-container .pricing-card .footer p.footer-note {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section#pricing h2 {
+    font-size: 2.5rem;
+  }
+  section#pricing h3 {
+    font-size: 1.8rem;
+  }
+  section#pricing p {
+    font-size: 1.2rem;
+  }
+  section#pricing article h2.plan-name {
+    font-size: 2.5rem;
+  }
+  section#pricing article p.plan-description {
+    font-size: 1.2rem;
+  }
+  section#pricing article .pricing-card-container {
+    margin: auto;
+  }
+  section#pricing article .pricing-card-container .pricing-card .body .specs p,
+  section#pricing article .pricing-card-container .pricing-card .body .specs span {
+    font-size: 1.2rem;
+  }
+  section#pricing article .pricing-card-container .pricing-card .body .specs p {
+    font-size: 1.2rem;
+  }
+  section#pricing article .pricing-card-container .pricing-card .body .specs p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  section#pricing article .pricing-card-container .pricing-card .body .specs p span {
+    font-size: 1.2rem;
+  }
+  section#pricing article .pricing-card-container .pricing-card .footer h2.price {
+    font-size: 2.5rem;
+  }
+  section#pricing article .pricing-card-container .pricing-card .footer .button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section#pricing article .pricing-card-container {
+    max-width: calc(100vw - 5rem);
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#pricing article .pricing-card-container .pricing-card {
+    width: clamp(30%, 100%/3, 40%);
+  }
+  section#pricing article .pricing-card-container .pricing-card:nth-child(2) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  section#pricing article .pricing-card-container {
+    max-width: 75%;
+  }
+}
+/*# sourceMappingURL=pricing.css.map */
