@@ -1,285 +1,413 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Pricing - Quark</title>
-    <meta name="script " content="">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/allmodes.css">
-    <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
-<script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quark</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="./assets/images/logoBW.png" type="image/x-icon">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./scss/pricing/pricing.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Google Font-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Arc -->
+
+    <script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><img src="assets/img/LogoBW.png" style="width: 4.5%;margin-right: 15px;"><a class="navbar-brand logo" href="index.html" style="font-family: Aldrich, sans-serif;color: rgba(155,138,255,0.9);">Quark Hosting</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Client Portal</a></li>
-                </ul>
-            </div>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logoBW.png" alt="Logo"></a>
+            <a href="#" class="name">Quarkhost</a>
+        </div>
+
+        <div class="hamburger-container">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/features.html">Features</a></li>
+                <li><a href="/pricing.html">Pricing</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/login.html">Client Portal</a></li>
+            </ul>
         </div>
     </nav>
-    <main class="page pricing-table-page">
-        <section class="clean-block clean-pricing dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Pricing Table</h2>
-                    <p>We strive to provide the cheapest services with the highest quality possible! With Budget, you can get bargain priced resources with excellent customer service. With Premium, its even better! With High Quality CPUs and the latest DDR4 and SSD storage! Finally, our Extreme options are for very heavy workloads. With a generous helping of vCPUs, RAM and either SSD or HDD storage, It can get the job done!</p>
-                </div>
-                <div>
-                    <ul class="nav nav-tabs nav-fill" role="tablist" style="margin: auto;width: 80%;margin-right: 10%;margin-left: 10%;margin-bottom: 3rem;">
-                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Budget</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Premium</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-3">Extreme</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane" role="tabpanel" id="tab-1">
-                            <div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>UP Quark</h3>
-                                            </div>
-                                            <p>For hosting a passion project or proof of concept Discord Bot!</p>
-                                            <div class="features">
-                                                <h4><span class="feature">vCPUs (2.13GHz*) :&nbsp;</span><span>1</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>2GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>125GB HDD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>100MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="text-align: center;font-size: 300%;background: linear-gradient(-116deg, rgb(174,255,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$5</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="ribbon"><span>Most Popular</span></div>
-                                            <div class="heading">
-                                                <h3>DOWN Quark</h3>
-                                            </div>
-                                            <p>For those project which need a bit more processing power.</p>
-                                            <div class="features">
-                                                <h4><span class="feature"><strong>vCPUs (2.20GHz*)&nbsp;</strong>:&nbsp;</span><span>2</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>4GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>250GB HDD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="font-size: 300%;background: linear-gradient(-116deg, rgb(255,185,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$10</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>CHARM Quark</h3>
-                                                <div class="ribbon" style="background: linear-gradient(-116deg, rgb(255,207,135), rgb(129,215,189) 99%);"><span>Best Value!</span></div>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span class="feature">vCPUs (2.26GHz*):&nbsp;</span><span>4</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>8GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>500GB HDD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4>$17</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p style="font-size: 10px;padding-top: 32px;">*These are the guaranteed minimum clock speeds of the VPS. Actual clock speed may be higher</p>
+
+    <main>
+        <section id="pricing">
+
+            <!-- Budget -->
+
+            <article class="budget">
+                <h2 class="plan-name">Budget Plans</h2>
+                <p class="plan-description">Get bargain priced resources with excellent customer service!</p>
+
+                <div class="pricing-card-container">
+
+                    <!-- UP Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">UP Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
                         </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-2">
-                            <div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>STRANGE Quark</h3>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span data-bs-toggle="tooltip" data-bss-tooltip="" class="feature">vCPUs (3.2/3.6GHz*) :&nbsp;</span><span>2</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>8GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>1TB HDD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="text-align: center;font-size: 300%;background: linear-gradient(-116deg, rgb(174,255,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$25</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item" style="background: linear-gradient(-116deg, rgb(54,54,54), rgb(6,6,6) 99%);">
-                                            <div class="heading">
-                                                <h3>BOTTOM Quark</h3>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span class="feature"><strong>vCPUs (3.4/4.0GHz*)&nbsp;</strong>:&nbsp;</span><span>2</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>8GB DDR4</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>240GB SSD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="font-size: 300%;background: linear-gradient(-116deg, rgb(255,185,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$30</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>TOP Quark</h3>
-                                                <div class="ribbon" style="background: linear-gradient(-116deg, rgb(255,207,135), rgb(129,215,189) 99%);"><span>Best Value!</span></div>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span class="feature">vCPUs (3.7/4.7GHz*):&nbsp;</span><span>3</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>8GB DDR4</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>240GB SSD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4>$32</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.13GHz*)</span>: 1</p>
+                                <p><span>Memory</span>: 2GB</p>
+                                <p><span>Storage</span>: 125GB HDD</p>
+                                <p><span>Uplink</span>: 100MB/s</p>
                             </div>
-                            <p style="font-size: 10px;padding-top: 32px;">*These clock speeds are Regular and Turbo.</p>
                         </div>
-                        <div class="tab-pane active" role="tabpanel" id="tab-3">
-                            <div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>Hydrogen</h3>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span data-bs-toggle="tooltip" data-bss-tooltip="" class="feature">vCPUs (2.6/3.3GHz*) :&nbsp;</span><span>8</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>32GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>480GB SSD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="text-align: center;font-size: 300%;background: linear-gradient(-116deg, rgb(174,255,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$55</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item" style="background: linear-gradient(-116deg, rgb(54,54,54), rgb(6,6,6) 99%);">
-                                            <div class="heading">
-                                                <h3>Deuterium</h3>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span class="feature"><strong>vCPUs (2.6/3.3GHz*)&nbsp;</strong>:&nbsp;</span><span>16</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>64GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>960GB SSD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4 style="font-size: 300%;background: linear-gradient(-116deg, rgb(255,185,135), rgb(114,137,218) 99%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$100</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-4">
-                                        <div class="clean-pricing-item">
-                                            <div class="heading">
-                                                <h3>Tritium</h3>
-                                                <div class="ribbon" style="background: linear-gradient(-116deg, rgb(255,207,135), rgb(129,215,189) 99%);"><span>Best Value!</span></div>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <div class="features">
-                                                <h4><span class="feature">vCPUs (2.66/3.06GHz*):&nbsp;</span><span>24</span></h4>
-                                                <h4><span class="feature">Memory:&nbsp;</span><span>72GB</span></h4>
-                                                <h4><span class="feature">Storage:&nbsp;</span><span>3TB HDD</span></h4>
-                                                <h4><span class="feature">Uplink:&nbsp;</span><span>1000MB/s</span></h4>
-                                                <h4><span class="feature">Wait Time:&nbsp;</span><span>1-2 Business Days</span></h4>
-                                            </div>
-                                            <div class="price">
-                                                <h4>$140</h4>
-                                            </div><button class="btn btn-outline-primary d-block w-100" type="button">BUY NOW</button>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        <div class="footer">
+                            <h2 class="price">$5</h3>
+                                <a href="#" class="button">Buy Now</a>
+
+                                <p>* Guaranteed minimum clock speeds of the VPS. Actual clock speed may be higher.</p>
+                        </div>
+                    </div>
+
+                    <!-- Down Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">DOWN Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.20GHz*)</span>: 2</p>
+                                <p><span>Memory</span>: 4GB</p>
+                                <p><span>Storage</span>: 250GB HDD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
                             </div>
-                            <p style="font-size: 10px;padding-top: 32px;">*These clock speeds are Regular and Turbo.</p>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$10</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Guaranteed minimum clock speeds of the VPS. Actual clock speed may be higher.</p>
+                        </div>
+                    </div>
+
+                    <!-- Charm Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">CHARM Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.26GHz*)</span>: 4</p>
+                                <p><span>Memory</span>: 8GB</p>
+                                <p><span>Storage</span>: 500GB HDD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$17</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Guaranteed minimum clock speeds of the VPS. Actual clock speed may be higher.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+
+            <hr class="section-divide">
+
+            <!-- Premium -->
+
+            <article class="premium">
+                <h2 class="plan-name">Premium Plans</h2>
+                <p class="plan-description">Get high quality CPUs and the latest DDR4 RAM and SSD storage!</p>
+
+                <div class="pricing-card-container">
+
+                    <!-- Strange Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">STRANGE Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (3.2/3.6GHz*)</span>: 2</p>
+                                <p><span>Memory</span>: 8GB</p>
+                                <p><span>Storage</span>: 1TB HDD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$25</h3>
+                                <a href="#" class="button">Buy Now</a>
+
+                                <p>* Regular and Turbo CPU clock speeds</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">BOTTOM Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (3.40/4.0GHz*)</span>: 2</p>
+                                <p><span>Memory</span>: 8GB</p>
+                                <p><span>Storage</span>: 240GB SSD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$30</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Regular and Turbo CPU clock speeds</p>
+                        </div>
+                    </div>
+
+                    <!-- Top Quark -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">TOP Quark</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (3.7/4.7GHz*)</span>: 3</p>
+                                <p><span>Memory</span>: 8GB</p>
+                                <p><span>Storage</span>: 240GB SSD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$32</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Regular and Turbo CPU clock speeds</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <hr class="section-divide">
+
+            <!-- Extreme -->
+
+            <article class="extreme">
+                <h2 class="plan-name">Extreme Plans</h2>
+                <p class="plan-description">For very heavy workloads.
+                    <br>
+                    With the powerful vCPUs, high capacity RAM and either
+                    SSD or HDD storage, it can get the job done!</p>
+
+                <div class="pricing-card-container">
+
+                    <!-- Hydrogen -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">Hydrogen</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.6/3.3GHz*)</span>: 8</p>
+                                <p><span>Memory</span>: 32GB</p>
+                                <p><span>Storage</span>: 480GB SSD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$55</h3>
+                                <a href="#" class="button">Buy Now</a>
+
+                                <p>* Regular and Turbo CPU clock speeds</p>
+                        </div>
+                    </div>
+
+                    <!-- Deuterium -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">Deuterium</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?</p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.6/3.3GHz*)</span>: 16</p>
+                                <p><span>Memory</span>: 64GB</p>
+                                <p><span>Storage</span>: 960GB SSD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$100</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Regular and Turbo CPU clock speeds</p>
+                        </div>
+                    </div>
+
+                    <!-- Tritium -->
+
+                    <div class="pricing-card">
+                        <div class="head">
+                            <h3 class="card-head">Tritium</h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+                                nulla?
+                            </p>
+                        </div>
+
+                        <hr class="card-divide">
+
+                        <div class="body">
+                            <div class="specs">
+                                <p><span>Specifications</span>:</p>
+                                <p><span>vCPUs (2.66/3.06GHz*)</span>: 24</p>
+                                <p><span>Memory</span>: 72GB</p>
+                                <p><span>Storage</span>: 3TB HDD</p>
+                                <p><span>Uplink</span>: 1000MB/s</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <h2 class="price">$140</h2>
+                            <a href="#" class="button">Buy Now</a>
+
+                            <p>* Regular and Turbo CPU clock speeds</p>
+                            <p class="footer-note">* May take 1-2 business days to deliver</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
-    <footer class="page-footer dark" style="padding-top: 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
+
+    <footer id="footer">
+        <div class="link-container">
+            <div class="container">
+                <h3 class="container-head">Get Started</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Sign Up</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Downloads</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">About Us</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Information</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Contact Us</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Support</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">FAQ</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Help Desk</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Forums</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Legal</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Service</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Use</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-copyright" style="background: rgb(43,47,49);border-width: 0px;margin-top: 25px;">
-            <p>© 2021 Quarkhost</p>
-        </div>
+
+        <p class="copyright">&copy; <span class="year"></span> Quarkhost</p>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/arc-sw.js"></script>
+
+    <script src="./js/year.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

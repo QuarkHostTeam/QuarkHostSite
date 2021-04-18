@@ -1,0 +1,52 @@
+@import "./resets", "./variables", "./function",
+    "./button";
+
+* {
+    color: $secondary-color;
+    font-family: "Aldrich", sans-serif;
+}
+
+:root {
+    scroll-padding-top: 85px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $main-bg-color;
+    margin-top: 85px;
+}
+
+h1 {
+    font-size: $h1-default-size;
+}
+
+h2 {
+    font-size: $h2-default-size;
+    font-weight: weight("regular");
+}
+
+h3 {
+    font-size: $h3-default-size;
+    font-weight: weight("regular");
+}
+
+p {
+    font-size: $p-default-size;
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+
+    h2 {
+        color: $main-color;
+    }
+
+    p.section-description {
+        color: rgba($secondary-color, 0.7);
+    }
+}
+
+article {
+    margin-top: 3.5rem;
+}

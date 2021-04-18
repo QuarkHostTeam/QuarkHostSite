@@ -1,57 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Quark</title>
-    <meta name="script " content="">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/allmodes.css">
-    <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
-<script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quark</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="./assets/images/logoBW.png" type="image/x-icon">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./scss/login/login.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Google Font-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+        
+    <!-- Arc -->
+
+    <script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
 </head>
 
 <body>
-    <section class="login-dark" style="background: linear-gradient(-83deg, rgba(0,0,0,0.65) 0%, rgba(34,34,34,0.47)), url(&quot;assets/img/nya.jpg&quot;) center / cover no-repeat;height: 100%;">
-        <form method="post">
-            <h2 class="visually-hidden">Login Form</h2>
-            <div class="illustration">
-                <h3 style="color: var(--bs-purple);">Welcome back!<br></h3>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logoBW.png" alt="Logo"></a>
+            <a href="#" class="name">Quarkhost</a>
+        </div>
+
+        <div class="hamburger-container">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/features.html">Features</a></li>
+                <li><a href="/pricing.html">Pricing</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/login.html">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="login">
+            <form method="post">
+                <div class="signup">
+                    <h3>Sign Up</h3>
+                    <button type="submit"><i class="fab fa-discord"></i> Discord</button>
+                </div>
+
+                <hr>
+
+                <div class="login">
+                    <h3>Login</h3>
+                    <button type="submit"><i class="fab fa-discord"></i> Discord</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="link-container">
+            <div class="container">
+                <h3 class="container-head">Get Started</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Sign Up</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Downloads</a></li>
+                </ul>
             </div>
-            <div class="mb-3"></div>
-            <div class="mb-3"></div>
-            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="background-color: #f8ceec;background-image: linear-gradient(315deg, #ba92ae 0%, #c0a5ff 74%);border-radius: 26px;">Login with Discord&nbsp;<i class="fab fa-discord" style="font-size: 16px;"></i></button><button class="btn btn-primary d-block w-100" type="submit" style="background-color: #f8ceec;background-image: linear-gradient(315deg, #ba92ae 0%, #c0a5ff 74%);border-radius: 26px;">Sign Up with Discord&nbsp;<i class="fab fa-discord" style="font-size: 16px;"></i></button></div>
-        </form>
-    </section>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><img src="assets/img/LogoBW.png" style="width: 4.5%;margin-right: 15px;"><a class="navbar-brand logo" href="index.html" style="font-family: Aldrich, sans-serif;color: rgba(155,138,255,0.9);">Quark Hosting</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="login.html">Client Portal</a></li>
+
+            <div class="container">
+                <h3 class="container-head">About Us</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Information</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Contact Us</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Support</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">FAQ</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Help Desk</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Forums</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Legal</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Service</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Use</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/arc-sw.js"></script>
+
+        <p class="copyright">&copy; <span class="year"></span> Quarkhost</p>
+    </footer>
+
+    <script src="./js/year.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

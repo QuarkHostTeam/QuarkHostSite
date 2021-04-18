@@ -1,0 +1,116 @@
+@import "./variables", "./resets", "./function";
+
+footer {
+    padding: 2.5rem 0 1rem 0;
+    background: $secondary-bg-color;
+    text-align: center;
+    margin-top: 4rem;
+
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            margin-bottom: 2rem;
+
+            h3.container-head {
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: weight("bold");
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 0;
+                    margin: 0.5rem auto;
+
+                    i {
+                        color: $main-color;
+                        margin-right: 0.5rem;
+                        font-size: 0.7rem;
+                        display: none;
+                        transition: 100ms color linear;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $main-color-dark;
+                        }
+                    }
+
+                    a {
+                        font-size: 1rem;
+                        color: rgba($secondary-color, 0.8);
+                        transition: color 100ms linear;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    p.copyright,
+    p.copyright .year {
+        color: rgba($secondary-color, 0.7);
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+        & {
+            .link-container {
+                width: 85%;
+                max-width: 95%;
+                margin: auto;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                text-align: left;
+
+                .container {
+                    display: block;
+
+                    ul {
+                        li {
+                            i {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1440px) {
+        & {
+            .link-container {
+                .container {
+                    h3.container-head {
+                        font-size: $h3-default-size;
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                font-size: $a-default-size;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p.copyright,
+            p.copyright .year {
+                font-size: $p-default-size;
+            }
+        }
+    }
+}

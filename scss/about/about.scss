@@ -1,0 +1,158 @@
+@import "../resets", "../variables", "../function", "../navbar", "../footer",
+    "../button", "../scrollbar", "../default";
+
+// Navbar
+
+nav > .nav-links > ul > li:nth-child(4) > a {
+    color: $main-color;
+}
+
+// About
+
+section#about {
+    h2 {
+        color: $main-color;
+        font-size: 2rem;
+    }
+
+    p.section-description {
+        font-size: 1rem;
+        max-width: 35rem;
+        margin: 1rem auto 0;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 3rem auto 0;
+
+        .box-container {
+            background: $card-bg;
+            border-radius: 0.3rem;
+            border: 1px solid rgba(#000, 0.2);
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                margin: 3rem auto;
+            }
+
+            img.review-img {
+                width: 100%;
+                border-radius: 0.3rem 0.3rem 0 0;
+                display: block;
+            }
+
+            .content {
+                margin: auto;
+                width: 100%;
+                display: block;
+                margin: 2rem 0;
+
+                h3.head {
+                    font-size: 1.1rem;
+                    font-weight: weight("bold");
+                    margin-bottom: 0.5rem;
+                }
+
+                p.body {
+                    font-size: 0.9rem;
+                    color: rgba($secondary-color, 0.7);
+                    max-width: 20ch;
+                    margin: auto;
+                }
+
+                .footer {
+                    margin-top: 1rem;
+
+                    a {
+                        &:nth-child(2) {
+                            margin: 0 0.8rem;
+                        }
+
+                        i {
+                            font-size: 1.2rem;
+                            color: $main-color;
+                            
+                            &:hover {
+                                color: $main-color-dark;
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        & {
+            h2 {
+                font-size: $h2-default-size;
+            }
+
+            p.section-description {
+                font-size: $p-default-size;
+                width: clamp(30%, 40%, 60%);
+            }
+
+            .container {
+                max-width: 50%;
+
+                .box-container {
+                    &:nth-child(2) {
+                        margin: 4rem auto;
+                    }
+
+                    .content {
+                        h3.head {
+                            font-size: $h3-default-size;
+                            margin-bottom: 0.8rem;
+                        }
+
+                        p.body {
+                            font-size: $p-default-size;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            .container {
+                max-width: 90%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                .box-container {
+                    margin: 0 2rem;
+                    width: clamp(30%, 100% / 3, 40%);
+
+                    &:nth-child(2) {
+                        margin: 0;
+                    }
+
+                    img.review-img {
+                        width: 100%;
+                    }
+
+                    .content {
+                        padding: 0 0.3rem;
+                        width: 100%;
+                        margin: 2rem 0;
+
+                        h3.head {
+                            font-size: 1.5rem;
+                        }
+
+                        p.body {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

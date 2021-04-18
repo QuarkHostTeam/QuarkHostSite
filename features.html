@@ -1,115 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Features - Quark</title>
-    <meta name="script " content="">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/allmodes.css">
-    <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
-<script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quark</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="./assets/images/logoBW.png" type="image/x-icon">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./scss/features/features.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Google Font-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+        
+    <!-- Arc -->
+
+    <script async src="https://arc.io/widget.min.js#AtCdeoFz"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><img src="assets/img/LogoBW.png" style="width: 4.5%;margin-right: 15px;"><a class="navbar-brand logo" href="index.html" style="font-family: Aldrich, sans-serif;color: rgba(155,138,255,0.9);">Quark Hosting</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Client Portal</a></li>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logoBW.png" alt="Logo"></a>
+            <a href="#" class="name">Quarkhost</a>
+        </div>
+
+        <div class="hamburger-container">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/features.html">Features</a></li>
+                <li><a href="/pricing.html">Pricing</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/login.html">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="features">
+            <h2 class="section-head">Features</h2>
+            <p class="section-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+                animi excepturi facilis accusantium natus?</p>
+
+            <article>
+                <div class="icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="body">
+                    <h3 class="article-head">Responsive</h3>
+                    <p class="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque
+                        quia soluta.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="icon">
+                    <i class="far fa-check-square"></i>
+                </div>
+                <div class="body">
+                    <h3 class="article-head">Browser Compatibility</h3>
+                    <p class="article-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque
+                        quia soluta.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="link-container">
+            <div class="container">
+                <h3 class="container-head">Get Started</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Sign Up</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Downloads</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">About Us</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Information</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Contact Us</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Support</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">FAQ</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Help Desk</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Forums</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3 class="container-head">Legal</h3>
+
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Service</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of Use</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <main class="page">
-        <section class="clean-block features">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Features</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 feature-box"><i class="icon-star icon"></i>
-                        <h4>Bootstrap 4</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
-                        <h4>Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
-                        <h4>Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
-                        <h4>All Browser Compatibility</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer dark" style="padding-top: 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright" style="background: rgb(43,47,49);border-width: 0px;margin-top: 25px;">
-            <p>© 2021 Quarkhost</p>
-        </div>
+
+        <p class="copyright">&copy; <span class="year"></span> Quarkhost</p>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/arc-sw.js"></script>
+
+    <script src="./js/year.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>
